@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Biorbd visualization toolkit 
+Summary: Biorbd visualization toolkit
 
 Biorbd visualization toolkit
 
