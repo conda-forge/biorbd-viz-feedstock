@@ -31,8 +31,8 @@ requirements:
 
 test:
   commands:
-    - xvfb-run python -c "import os; from BiorbdViz import BiorbdViz; os.getcwd(); BiorbdViz('Bras.bioMod')"  # [linux]
-    - python -c "import os; from BiorbdViz import BiorbdViz; os.getcwd(); BiorbdViz('Bras.bioMod')"  # [not linux]
+    - xvfb-run python -c "import os; from BiorbdViz import BiorbdViz; print(os.getcwd()); BiorbdViz('Bras.bioMod')"  # [linux]
+    - python -c "import os; from BiorbdViz import BiorbdViz; print(os.getcwd()); BiorbdViz('Bras.bioMod')"  # [not linux]
 
 about:
   home: http://github.com/pyomeca/biorbd-viz
