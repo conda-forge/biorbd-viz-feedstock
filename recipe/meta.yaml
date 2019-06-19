@@ -11,7 +11,7 @@ source:
   
 build:
   skip: True  # [py<35]
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -31,9 +31,8 @@ requirements:
 
 test:
   commands:
-    - xvfb-run python -c "import BiorbdViz"  # [linux]
-  imports:
-    - BiorbdViz  # [not linux]
+    - xvfb-run python -c "from BiorbdViz import BiorbdViz; BiorbdViz("Bras.bioMod")"  # [linux]
+    - python -c "from BiorbdViz import BiorbdViz; BiorbdViz("Bras.bioMod")"  # [not linux]
 
 about:
   home: http://github.com/pyomeca/biorbd-viz
