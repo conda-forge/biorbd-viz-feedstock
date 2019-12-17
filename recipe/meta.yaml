@@ -1,5 +1,5 @@
 {% set name = "biorbd-viz" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pyomeca/{{ name }}/archive/Release_{{ version }}.tar.gz
-  sha256: 19280cf0db4a666f01deca35db40fb68c7d295d1aa2b7a42bd55a61c1ab24fee
+  sha256: 9e8aef6dce5f390605f46507cb1222ce5147b9d9dd51fdd2cdda4fd95062630b
   
 build:
   skip: True  # [py<35]
