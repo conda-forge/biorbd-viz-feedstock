@@ -18,10 +18,6 @@ requirements:
   host:
     - python
     - pip
-    - biorbd
-    - vtk
-    - pyqt
-    - pyomeca
   run:
     - python
     - biorbd
