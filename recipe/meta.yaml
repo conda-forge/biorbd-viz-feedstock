@@ -26,8 +26,6 @@ requirements:
     - pyomeca
 
 test:
-  commands:
-    - xvfb-run python -c "import BiorbdViz"  # [linux]
   imports:
     - BiorbdViz  # [not linux]
 
