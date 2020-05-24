@@ -1,5 +1,6 @@
 {% set name = "biorbd-viz" %}
 {% set version = "1.2.5" %}
+{% set build_num = 1 %}
 
 package:
   name: {{ name|lower }}
@@ -10,9 +11,13 @@ source:
   sha256: 3f2409af0899eff717196c2a77526ae3f3a3f414e6c045a81554bf790a1f62ae
   
 build:
-  skip: True  # [py<35]
-  number: 0
+  number: {{ build_num }}
+  skip: true  # [py<36]
+  skip: true  # [backend == "casadi" and py>37]
   script: "{{ PYTHON }} -m pip install . -vv"
+  string: py{{ py }}_{{ backend }}_h{{ PKG_HASH }}_{{ build_num }}
+  track_features:
+    - casadi  # [backend == "casadi"]
 
 requirements:
   host:
@@ -20,13 +25,15 @@ requirements:
     - pip
   run:
     - python
-    - {{ pin_compatible('biorbd') }}
+    - biorbd =*=casadi*  # [backend == "casadi"]
+    - biorbd  # [backend == "eigen"]
     - vtk
     - pyqt
     - pyomeca
 
 test:
   imports:
+    - biorbd
     - BiorbdViz  # [not linux]
 
 about:
