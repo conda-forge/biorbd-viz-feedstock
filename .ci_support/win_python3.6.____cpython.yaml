@@ -1,3 +1,5 @@
+backend:
+- eigen
 channel_sources:
 - conda-forge,defaults
 channel_targets:
