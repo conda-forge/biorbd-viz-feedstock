@@ -23,8 +23,9 @@ requirements:
     - pip
   run:
     - python
-    - biorbd =*=casadi*  # [backend == "casadi"]
-    - biorbd  # [backend == "eigen"]
+    - {{ backend|default("eigen") }}
+    - {{ pin_compatible('rbdl') }}
+    - {{ pin_compatible('biorbd') }}
     - vtk
     - pyqt
     - pyomeca
