@@ -12,8 +12,6 @@ source:
   
 build:
   number: {{ build_num }}
-  skip: true  # [py<36]
-  skip: true  # [backend == "casadi" and py>37]
   script: "{{ PYTHON }} -m pip install . -vv"
   string: py{{ py }}_{{ backend }}_h{{ PKG_HASH }}_{{ build_num }}
   track_features:
