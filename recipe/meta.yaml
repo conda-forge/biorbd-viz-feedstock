@@ -30,7 +30,7 @@ requirements:
     - pyomeca
 
 test:
-  imports:
+  imports: 
     - biorbd
     - BiorbdViz  # [not linux]
 
