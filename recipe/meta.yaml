@@ -1,6 +1,6 @@
 {% set name = "biorbd-viz" %}
-{% set version = "1.3.1" %}
-{% set build_num = 1 %}
+{% set version = "1.3.2" %}
+{% set build_num = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pyomeca/{{ name }}/archive/Release_{{ version }}.tar.gz
-  sha256: 05d296f17db773dbf6d09e522aef36060af34b058f80f54981359c977af6022d
+  sha256: 40a3b8dba921a00fc1cc92d0eb4042a6392b341919fa042c629771ff9e69959d
 
 build:
   number: {{ build_num }}
@@ -29,6 +29,7 @@ requirements:
     - vtk
     - pyqt
     - pyomeca
+    - packaging
 
 test:
   imports:
