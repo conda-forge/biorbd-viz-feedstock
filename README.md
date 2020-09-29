@@ -1,11 +1,11 @@
-About biorbd-viz
-================
+About bioviz
+============
 
-Home: http://github.com/pyomeca/biorbd-viz
+Home: http://github.com/pyomeca/bioviz
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Biorbd visualization toolkit
 
@@ -30,120 +30,114 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_backendcasadipython3.6.____cpython</td>
+              <td>linux_64_backendcasadipython3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_backendcasadipython3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_64_backendcasadipython3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_backendcasadipython3.7.____cpython</td>
+              <td>linux_64_backendcasadipython3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_backendcasadipython3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_64_backendcasadipython3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_backendcasadipython3.8.____cpython</td>
+              <td>linux_64_backendcasadipython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_backendcasadipython3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_64_backendcasadipython3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_backendeigenpython3.6.____cpython</td>
+              <td>linux_64_backendeigenpython3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_backendeigenpython3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_64_backendeigenpython3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_backendeigenpython3.7.____cpython</td>
+              <td>linux_64_backendeigenpython3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_backendeigenpython3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_64_backendeigenpython3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_backendeigenpython3.8.____cpython</td>
+              <td>linux_64_backendeigenpython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_backendeigenpython3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=linux&configuration=linux_64_backendeigenpython3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_backendcasadipython3.6.____cpython</td>
+              <td>osx_64_backendcasadipython3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_backendcasadipython3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_64_backendcasadipython3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_backendcasadipython3.7.____cpython</td>
+              <td>osx_64_backendcasadipython3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_backendcasadipython3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_64_backendcasadipython3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_backendcasadipython3.8.____cpython</td>
+              <td>osx_64_backendcasadipython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_backendcasadipython3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_64_backendcasadipython3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_backendeigenpython3.6.____cpython</td>
+              <td>osx_64_backendeigenpython3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_backendeigenpython3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_64_backendeigenpython3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_backendeigenpython3.7.____cpython</td>
+              <td>osx_64_backendeigenpython3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_backendeigenpython3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_64_backendeigenpython3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_backendeigenpython3.8.____cpython</td>
+              <td>osx_64_backendeigenpython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_backendeigenpython3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=osx&configuration=osx_64_backendeigenpython3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_python3.6.____cpython</td>
+              <td>win_64_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=win&configuration=win_python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=win&configuration=win_64_python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_python3.7.____cpython</td>
+              <td>win_64_python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=win&configuration=win_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=win&configuration=win_64_python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_python3.8.____cpython</td>
+              <td>win_64_python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6897&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=win&configuration=win_python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/biorbd-viz-feedstock?branchName=master&jobName=win&configuration=win_64_python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
           </tbody>
         </table>
       </details>
-    </td>
-  </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
     </td>
   </tr>
 </table>
@@ -153,27 +147,27 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-biorbd--viz-green.svg)](https://anaconda.org/conda-forge/biorbd-viz) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/biorbd-viz.svg)](https://anaconda.org/conda-forge/biorbd-viz) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/biorbd-viz.svg)](https://anaconda.org/conda-forge/biorbd-viz) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/biorbd-viz.svg)](https://anaconda.org/conda-forge/biorbd-viz) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-bioviz-green.svg)](https://anaconda.org/conda-forge/bioviz) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/bioviz.svg)](https://anaconda.org/conda-forge/bioviz) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/bioviz.svg)](https://anaconda.org/conda-forge/bioviz) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/bioviz.svg)](https://anaconda.org/conda-forge/bioviz) |
 
-Installing biorbd-viz
-=====================
+Installing bioviz
+=================
 
-Installing `biorbd-viz` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `bioviz` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `biorbd-viz` can be installed with:
+Once the `conda-forge` channel has been enabled, `bioviz` can be installed with:
 
 ```
-conda install biorbd-viz
+conda install bioviz
 ```
 
-It is possible to list all of the versions of `biorbd-viz` available on your platform with:
+It is possible to list all of the versions of `bioviz` available on your platform with:
 
 ```
-conda search biorbd-viz --channel conda-forge
+conda search bioviz --channel conda-forge
 ```
 
 
@@ -215,17 +209,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating biorbd-viz-feedstock
-=============================
+Updating bioviz-feedstock
+=========================
 
-If you would like to improve the biorbd-viz recipe or build a new
+If you would like to improve the bioviz recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/biorbd-viz-feedstock are
+Note that all branches in the conda-forge/bioviz-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
