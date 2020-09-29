@@ -1,5 +1,5 @@
-{% set name = "biorbd-viz" %}
-{% set version = "1.3.3" %}
+{% set name = "bioviz" %}
+{% set version = "2.0.0" %}
 {% set build_num = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pyomeca/{{ name }}/archive/Release_{{ version }}.tar.gz
-  sha256: 213297a9422b06f5584b48ee032357d2be53a5942dbc1a0247d3459908600c9c
+  sha256: 51a72ff8f2dc618e1d70f4aa41c124427df2a7312861087553a2e121212e5f42
 
 build:
   number: {{ build_num }}
@@ -34,10 +34,10 @@ requirements:
 test:
   imports:
     - biorbd
-    - BiorbdViz  # [not linux]
+    - bioviz  # [not linux]
 
 about:
-  home: http://github.com/pyomeca/biorbd-viz
+  home: http://github.com/pyomeca/bioviz
   license: Apache-2.0
   license_file: LICENSE
   summary: Biorbd visualization toolkit
