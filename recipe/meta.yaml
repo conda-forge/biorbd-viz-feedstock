@@ -1,6 +1,6 @@
 {% set name = "bioviz" %}
 {% set version = "2.0.1" %}
-{% set build_num = 0 %}
+{% set build_num = 1 %}
 
 package:
   name: {{ name|lower }}
@@ -23,9 +23,12 @@ requirements:
     - pip
   run:
     - python
-    - {{ backend|default("eigen") }}
-    - {{ pin_compatible('rbdl') }}
-    - {{ pin_compatible('biorbd') }}
+    - eigen  # [backend == "eigen"]
+    - rbdl  # [backend == "eigen"]
+    - biorbd  # [backend == "eigen"]
+    - casadi  # [backend == "casadi"]
+    - rbdl =*=*casadi*  # [backend == "casadi"]
+    - biorbd =*=*casadi*  # [backend == "casadi"]
     - vtk
     - pyqt
     - pyomeca
@@ -40,7 +43,7 @@ about:
   home: http://github.com/pyomeca/bioviz
   license: Apache-2.0
   license_file: LICENSE
-  summary: Biorbd visualization toolkit
+  summary: Visualization toolkit for the biorbd suite
   description: |
     Biorbd visualization toolkit 
   doc_url: https://github.com/{{ name }}/{{ name }}
