@@ -21,8 +21,6 @@ requirements:
   host:
     - python
     - pip
-    - biorbd =*=*casadi*  # [backend == "casadi"]
-    - biorbd  # [backend == "eigen"]
   run:
     - python
     - {{ backend|default("eigen") }}
