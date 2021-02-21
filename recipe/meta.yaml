@@ -24,9 +24,11 @@ requirements:
   run:
     - python
     - eigen  # [backend == "eigen"]
+    - rbdl  # [backend == "eigen"]
+    - biorbd  # [backend == "eigen"]
     - casadi  # [backend == "casadi"]
-    - {{ pin_compatible('rbdl') }}
-    - {{ pin_compatible('biorbd') }}
+    - rbdl =*=*casadi*  # [backend == "casadi"]
+    - biorbd =*=*casadi*  # [backend == "casadi"]
     - vtk
     - pyqt
     - pyomeca
