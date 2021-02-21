@@ -23,7 +23,8 @@ requirements:
     - pip
   run:
     - python
-    - {{ backend|default("eigen") }}
+    - eigen  # [backend == "eigen"]
+    - casadi  # [backend == "casadi"]
     - {{ pin_compatible('rbdl') }}
     - {{ pin_compatible('biorbd') }}
     - vtk
