@@ -1,6 +1,6 @@
 {% set name = "bioviz" %}
-{% set version = "2.1.0" %}
-{% set build_num = 1 %}
+{% set version = "2.1.1" %}
+{% set build_num = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -8,14 +8,13 @@ package:
 
 source:
   url: https://github.com/pyomeca/{{ name }}/archive/Release_{{ version }}.tar.gz
-  sha256: 61846340220db3517d25c9f94576379dc0c8ce5d8f29f7059f84411b8ecbd2ed
+  sha256: 68786abd04225c0a14cc5fb00d9c0d1a5892d2f5202ffdd4b5f3635b8415f362
 
 build:
   number: {{ build_num }}
+  skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . -vv
-  string: py{{ py }}_{{ backend }}_h{{ PKG_HASH }}_{{ build_num }}
-  track_features:
-    - casadi  # [backend == "casadi"]
+  string: py{{ py }}_h{{ PKG_HASH }}_{{ build_num }}
 
 requirements:
   host:
@@ -23,12 +22,12 @@ requirements:
     - pip
   run:
     - python
-    - eigen  # [backend == "eigen"]
-    - rbdl  # [backend == "eigen"]
-    - biorbd  # [backend == "eigen"]
-    - casadi  # [backend == "casadi"]
-    - rbdl =*=*casadi*  # [backend == "casadi"]
-    - biorbd =*=*casadi*  # [backend == "casadi"]
+    - eigen
+    - rbdl
+    - biorbd
+    - casadi
+    - rbdl
+    - biorbd
     - vtk
     - pyqt
     - pyomeca
@@ -36,7 +35,7 @@ requirements:
 
 test:
   imports:
-    - biorbd
+    - biorbd  # [linux]
     - bioviz  # [not linux]
 
 about:
