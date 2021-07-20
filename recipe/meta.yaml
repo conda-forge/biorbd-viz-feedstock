@@ -12,7 +12,7 @@ source:
 
 build:
   number: {{ build_num }}
-  sskip: true  # [py<39]
+  skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . -vv
   string: py{{ py }}_h{{ PKG_HASH }}_{{ build_num }}
 
