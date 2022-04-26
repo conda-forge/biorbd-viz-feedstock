@@ -1,5 +1,5 @@
 {% set name = "bioviz" %}
-{% set version = "2.1.6" %}
+{% set version = "2.1.7" %}
 {% set build_num = 1 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pyomeca/{{ name }}/archive/Release_{{ version }}.tar.gz
-  sha256: 0ba71b02adfad1a4d9714e9588f42892add11d22bb2db33c7c64ddacc077cb25
+  sha256: 728d605da98bd71d574d2add11a4a7e6185661546a6381bdedceb6880ab80c0c
 
 build:
   number: {{ build_num }}
