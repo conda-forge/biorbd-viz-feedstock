@@ -17,34 +17,16 @@ build:
   script: {{ PYTHON }} setup.py install -vv
   
 requirements:
-  build:
-    - cmake
-    - swig
-    - pkgconfig
-    - rbdl
-    - tinyxml
-    - ipopt
-    - biorbd
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - numpy                                  # [build_platform != target_platform]
-    - ninja
-    - {{ compiler('cxx') }}
   host:
     - python
-    - numpy
-    - rbdl
-    - tinyxml
-    - ipopt
-    - biorbd
+    - setuptools
   run:
-    - rbdl
-    - tinyxml
-    - ipopt
-    - biorbd
     - python
-    - scipy
-    - {{ pin_compatible('numpy') }}
+    - biorbd
+    - vtk
+    - pyqt
+    - pyomeca
+    - packaging
 
 test:
   imports:
