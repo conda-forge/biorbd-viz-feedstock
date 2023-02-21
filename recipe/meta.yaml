@@ -17,7 +17,7 @@ build:
     - lib/
     - lib/{{ name }}/
   skip: true  # [py<310]
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} setup.py install -vv
   
 requirements:
   build:
