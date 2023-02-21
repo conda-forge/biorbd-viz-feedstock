@@ -16,14 +16,6 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   string: py{{ py }}_h{{ PKG_HASH }}_{{ build_num }}
 
-requirements:
-  host:
-    - python
-    - pip
-  run:
-    - python
-    - biorbd
-
 test:
   imports:
     - biorbd  # [linux]
