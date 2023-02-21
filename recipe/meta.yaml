@@ -12,10 +12,12 @@ source:
 
 build:
   number: {{ build_num }}
+  string: py{{ py }}_h{{ PKG_HASH }}_{{ build_num }}
   rpaths:
     - lib/
     - lib/{{ name }}/
   skip: true  # [py<310]
+  script: {{ PYTHON }} -m pip install . -vv
   
 requirements:
   build:
