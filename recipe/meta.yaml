@@ -17,23 +17,8 @@ build:
   string: py{{ py }}_h{{ PKG_HASH }}_{{ build_num }}
 
 requirements:
-  build: 
-    - python
-    - biorbd
-    - vtk
-    - pyqt
-    - pyomeca
-    - packaging
-  host:
-    - python
-    - pip
   run:
-    - python
     - biorbd
-    - vtk
-    - pyqt
-    - pyomeca
-    - packaging
 
 test:
   imports:
