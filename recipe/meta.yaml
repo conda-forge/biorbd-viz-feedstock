@@ -17,6 +17,8 @@ build:
   string: py{{ py }}_h{{ PKG_HASH }}_{{ build_num }}
 
 requirements:
+  host:
+    - python
   run:
     - biorbd
 
