@@ -3,12 +3,12 @@
 {% set build_num = 3 %}
 
 package:
-  name: "biorbd"
-  version: "1.9.9"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: https://github.com/pyomeca/biorbd/archive/Release_1.9.9.tar.gz
-  sha256: 42a527a3b6f2b7c76786a11216956fb62279e007499cef13be53784871ab5343
+  url: https://github.com/pyomeca/{{ name }}/archive/Release_{{ version }}.tar.gz
+  sha256: 92af743d88d17a4064a178563993422ee1ee9eb9bd21187cdac532c341436539
 
 build:
   number: {{ build_num }}
@@ -27,6 +27,7 @@ requirements:
     - rbdl
     - tinyxml
     - ipopt
+    - biorbd
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
@@ -38,34 +39,30 @@ requirements:
     - rbdl
     - tinyxml
     - ipopt
+    - biorbd
   run:
     - rbdl
     - tinyxml
     - ipopt
+    - biorbd
     - python
     - scipy
     - {{ pin_compatible('numpy') }}
 
 test:
-  commands:
-    - test -f $PREFIX/lib/biorbd_casadi/libbiorbd_casadi$SHLIB_EXT  # [unix]
-    - test -f $PREFIX/lib/biorbd_eigen/libbiorbd_eigen$SHLIB_EXT  # [unix]
-    - if not exist %PREFIX%\\Lib\\biorbd_casadi*.lib exit 1  # [win]
-    - if not exist %PREFIX%\\Lib\\biorbd_eigen*.lib exit 1  # [win]
   imports:
-    - biorbd  # [not arm64]
-    - biorbd_casadi  # [not arm64]
+    - biorbd  # [linux]
+    - bioviz  # [not linux]
 
 about:
-  home: http://github.com/pyomeca/biorbd
-  license: MIT
+  home: http://github.com/pyomeca/bioviz
+  license: Apache-2.0
   license_file: LICENSE
-  summary: 'Biomechanical add-ons to the RigidBody Dynamics Library '
-
+  summary: Visualization toolkit for the biorbd suite
   description: |
-    Biomechanical add-ons to the RigidBody Dynamics Library .
-  doc_url: https://github.com/pyomeca/biorbd/
-  dev_url: https://github.com/pyomeca/biorbd/
+    Biorbd visualization toolkit 
+  doc_url: https://github.com/{{ name }}/{{ name }}
+  dev_url: https://github.com/{{ name }}/{{ name }}
 
 extra:
   recipe-maintainers:
