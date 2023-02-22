@@ -14,14 +14,12 @@ build:
   number: {{ build_num }}
   string: py{{ py }}_h{{ PKG_HASH }}_{{ build_num }}
   skip: true  # [py<310]
-  script: {{ PYTHON }} setup.py install -vv
-  
+  script: {{ PYTHON }} -m pip install . -vv
+
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
-  host:
-    - python
-    - setuptools
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   run:
     - python
     - biorbd
