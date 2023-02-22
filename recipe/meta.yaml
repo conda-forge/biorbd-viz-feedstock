@@ -33,7 +33,7 @@ requirements:
 test:
   imports:
     - biorbd  # [linux]
-    - bioviz  # [not linux and not osx_arm64]
+    - bioviz  # [not linux and not arm64]
 
 about:
   home: http://github.com/pyomeca/bioviz
