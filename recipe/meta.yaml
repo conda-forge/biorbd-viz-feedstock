@@ -1,6 +1,6 @@
 {% set name = "bioviz" %}
-{% set version = "2.4.0" %}
-{% set build_num = 4 %}
+{% set version = "2.4.1" %}
+{% set build_num = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pyomeca/{{ name }}/archive/Release_{{ version }}.tar.gz
-  sha256: a2b9e879d659586552445b3e4d23113c263f842c5d05b3c3764ff1d8bcb8bc08
+  sha256: fa77c36cca45254544fe55d02ca86f6564397b74f8e4e4b81caab0472bd182c5
 
 build:
   number: {{ build_num }}
@@ -23,6 +23,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
     - biorbd
