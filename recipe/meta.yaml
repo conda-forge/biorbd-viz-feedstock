@@ -1,5 +1,5 @@
 {% set name = "bioviz" %}
-{% set version = "2.4.2" %}
+{% set version = "2.5.0" %}
 {% set build_num = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pyomeca/{{ name }}/archive/Release_{{ version }}.tar.gz
-  sha256: 93a7b0618786ab9d412087512c328f2e88e26ecacf5bbd8c720a41624b9362e2
+  sha256: 0872b80ec4b23c6d53d4bce11f3da8b642da329c0836783770a2539ce1ff0955
 
 build:
   number: {{ build_num }}
@@ -28,7 +28,7 @@ requirements:
     - python
     - biorbd
     - vtk
-    - pyqt
+    - pyqt >=6
     - pyomeca
     - packaging
 
