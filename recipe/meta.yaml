@@ -28,7 +28,7 @@ requirements:
     - python
     - biorbd >=1.12
     - vtk
-    - pyqt >=6
+    - pyqt
     - pyomeca
 
 test:
