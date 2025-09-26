@@ -26,11 +26,10 @@ requirements:
     - setuptools
   run:
     - python
-    - biorbd
+    - biorbd >=1.12
     - vtk
     - pyqt >=6
     - pyomeca
-    - packaging
 
 test:
   imports:
