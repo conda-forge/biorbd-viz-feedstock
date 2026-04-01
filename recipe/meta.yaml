@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pyomeca/{{ name }}/archive/Release_{{ version }}.tar.gz
-  sha256: 12a8f15aabc49e55692ac798018f574b3bf2f09f84eab7fb77dbf41355cf61d2
+  sha256: 2bff908668d193047d7418f000d207511b09c9445eabc5e54f2816409d37a2fc
 
 build:
   number: {{ build_num }}
